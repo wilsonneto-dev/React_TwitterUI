@@ -17,7 +17,7 @@ const Profile: React.FC = () => {
           <ProfileColumn />
         </aside>
         <section>timeline</section>
-        <aside>widgets</aside>
+        <aside className={styles.right}></aside>
       </div>
     </>
   );
