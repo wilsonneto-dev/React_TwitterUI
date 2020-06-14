@@ -18,4 +18,8 @@
     color: $color-button-primary;
     border: 1px solid $color-button-primary;
   }
+
+  &.small {
+    height: 27px;
+  }
 }

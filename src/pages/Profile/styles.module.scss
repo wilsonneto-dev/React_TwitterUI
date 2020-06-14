@@ -2,7 +2,6 @@
 
 .columns {
   display: flex;
-  justify-content: space-between;
   max-width: $size-box-max;
   padding: 0 $size-box-padding;
   margin: 0 auto;
@@ -13,9 +12,11 @@
   }
 
   .main {
+    flex: 1;
   }
 
   .right {
-    border: 1px solid rba(200, 200, 200);
+    width: 290px;
+    margin-top: 10px;
   }
 }

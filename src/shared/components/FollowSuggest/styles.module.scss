@@ -1,0 +1,60 @@
+@import '../../../theme/theme', '../../../theme/mixins/widget-container';
+
+.container {
+  @include widgetContainer;
+
+  ul {
+    margin-top: 10px;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $color-field-border;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          margin-right: 7px;
+        }
+
+        & > div {
+          strong {
+            font-size: 14px;
+            color: $color-text-default;
+            white-space: nowrap;
+
+            span {
+              white-space: nowrap;
+              color: $color-text-light;
+              font-weight: normal;
+              font-size: 85%;
+            }
+          }
+          button {
+            margin-top: 3px;
+          }
+        }
+      }
+
+      .close {
+        padding-left: 5px;
+
+        & > a {
+          color: rgba(0, 0, 0, 0.3);
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

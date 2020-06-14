@@ -5,12 +5,16 @@
   outline: none;
 }
 
+body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
 ul,
 li {
   list-style: none;
 }
 
-body {
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
+a {
+  text-decoration: none;
 }

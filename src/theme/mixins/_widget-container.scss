@@ -1,0 +1,35 @@
+@import '../theme';
+
+@mixin widgetContainer {
+  background-color: $color-toolbar-background;
+  padding: 15px;
+
+  & > header {
+    display: flex;
+    align-items: baseline;
+
+    strong {
+      font-size: 18px;
+      color: $color-text-dark;
+    }
+
+    a {
+      font-size: 12px;
+      color: $color-button-primary;
+      position: relative;
+      padding-left: 10px;
+
+      &::before {
+        content: '';
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color: #000;
+        opacity: 50%;
+        position: absolute;
+        left: 4px;
+        top: 6px;
+      }
+    }
+  }
+}
