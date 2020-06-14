@@ -1,0 +1,20 @@
+@import '../../theme/theme';
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  max-width: $size-box-max;
+  padding: 0 $size-box-padding;
+  margin: 0 auto;
+
+  .left {
+    width: 260px;
+    margin-top: -130px;
+  }
+
+  .main {
+  }
+
+  .right {
+  }
+}

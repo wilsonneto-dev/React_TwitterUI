@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Search from 'shared/components/Search';
-import ButtonFeatured, { ButtonTheme } from 'shared/components/ButtonFeatured';
+import ButtonFeatured from 'shared/components/ButtonFeatured';
 
 import { ReactComponent as SvgLogo } from 'assets/icons/logo.svg';
 import { ReactComponent as SvgHome } from 'assets/icons/home.svg';

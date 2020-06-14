@@ -1,0 +1,99 @@
+@import '../../../theme/theme';
+
+.container {
+  img.avatar {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid $color-toolbar-background;
+  }
+
+  h1 {
+    font-size: 21px;
+    color: $color-text-dark;
+    margin-top: 10px;
+  }
+
+  span {
+    color: $color-text-light;
+    font-size: 14px;
+  }
+
+  p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: $color-text-default;
+  }
+
+  & > ul {
+    margin-top: 20px;
+
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: $color-text-default;
+      margin-top: 6px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  @mixin widget {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 14px;
+    color: $color-featured;
+
+    strong {
+      display: flex;
+      align-items: center;
+
+      img,
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      align-items: flex-start;
+      margin-top: 10px;
+
+      li {
+        flex-shrink: 0;
+        flex-grow: 1;
+        background-color: $color-placeholder;
+        margin: 5px 5px 0 0;
+      }
+    }
+  }
+
+  .followers {
+    @include widget;
+
+    li {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+  }
+
+  .photos {
+    @include widget;
+
+    li {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+    }
+  }
+}
