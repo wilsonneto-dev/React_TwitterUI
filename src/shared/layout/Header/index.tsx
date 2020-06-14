@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Search from 'shared/components/Search';
+import ButtonFeatured, { ButtonTheme } from 'shared/components/ButtonFeatured';
 
 import { ReactComponent as SvgLogo } from 'assets/icons/logo.svg';
 import { ReactComponent as SvgHome } from 'assets/icons/home.svg';
@@ -36,7 +37,7 @@ const Header: React.FC = () => (
           src="https://avatars3.githubusercontent.com/u/20674439?v=4"
           alt="Avatar"
         />
-        <button>Tweet</button>
+        <ButtonFeatured>Tweet</ButtonFeatured>
       </div>
     </div>
   </div>

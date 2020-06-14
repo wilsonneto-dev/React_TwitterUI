@@ -49,19 +49,5 @@
       border-radius: 50%;
       margin: 0 15px;
     }
-
-    button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 34px;
-      width: 90px;
-      background-color: $color-button-primary;
-      font-size: 14px;
-      font-weight: bold;
-      color: $color-button-text;
-      border: 0;
-      border-radius: 16px;
-    }
   }
 }
