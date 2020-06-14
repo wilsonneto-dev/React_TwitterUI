@@ -1,0 +1,13 @@
+@import '../../../theme/global.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 380px;
+  background-color: $color-featured;
+  color: $color-featured-text;
+  font-size: 30px;
+}
