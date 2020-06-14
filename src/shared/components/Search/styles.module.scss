@@ -1,0 +1,16 @@
+@import '../../../theme/theme';
+
+.search {
+  width: 220px;
+  height: 34px;
+  background: $color-field-background url('/assets/search.svg') no-repeat 190px;
+  border: 1px solid $color-field-border;
+  padding: 0 30px 0 12px;
+  border-radius: 16px;
+  color: $color-field-text;
+  font-size: 12px;
+
+  &:focus {
+    outline: none;
+  }
+}

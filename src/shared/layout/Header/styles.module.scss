@@ -1,0 +1,67 @@
+@import '../../../theme/theme';
+
+.container {
+  height: 46px;
+  position: relative;
+  z-index: 2;
+  background: $color-toolbar-background;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: $size-box-max;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 $size-box-padding;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      color: $color-toolbar-text;
+      font-weight: bold;
+      margin-left: 30px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      img,
+      svg {
+        margin-right: 7px;
+      }
+    }
+  }
+
+  .toolbox {
+    display: flex;
+
+    img {
+      height: 34px;
+      width: 34px;
+      border-radius: 50%;
+      margin: 0 15px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 34px;
+      width: 90px;
+      background-color: $color-button-primary;
+      font-size: 14px;
+      font-weight: bold;
+      color: $color-button-text;
+      border: 0;
+      border-radius: 16px;
+    }
+  }
+}
