@@ -1,0 +1,23 @@
+@import '../../../theme/theme', '../../../theme/mixins/widget-container';
+
+.container {
+  @include widgetContainer;
+
+  margin-top: 10px;
+
+  ul {
+    margin-top: 10px;
+
+    li {
+      font-size: 14px;
+      color: $color-featured;
+      font-weight: bold;
+      white-space: nowrap;
+      margin-top: 5px;
+
+      &:first {
+        margin-top: 0;
+      }
+    }
+  }
+}

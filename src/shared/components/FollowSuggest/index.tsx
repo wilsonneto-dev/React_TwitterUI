@@ -5,6 +5,8 @@ import ButtonFeatured, {
   ButtonSize,
 } from 'shared/components/ButtonFeatured';
 
+import { ReactComponent as FriendsIcon } from 'assets/icons/followers.svg';
+
 import styles from './styles.module.scss';
 
 import suggestions from './fakeData';
@@ -37,6 +39,13 @@ const FollowSuggest: React.FC = () => (
         </li>
       ))}
     </ul>
+
+    <footer>
+      <a href="#">
+        <FriendsIcon fill="green" className={styles.icon} />
+        Find Friends
+      </a>
+    </footer>
   </div>
 );
 

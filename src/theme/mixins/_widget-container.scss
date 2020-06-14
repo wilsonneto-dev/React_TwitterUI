@@ -32,4 +32,24 @@
       }
     }
   }
+
+  & > footer {
+    padding-top: 5px;
+
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: $color-button-primary;
+
+      .icon {
+        margin-right: 5px;
+
+        * {
+          stroke: $color-button-primary;
+          height: 15px;
+        }
+      }
+    }
+  }
 }
