@@ -5,6 +5,7 @@ import PreContentBar from 'shared/components/PreContentBar';
 import ProfileColumn from 'shared/components/ProfileColumn';
 import FollowSuggest from 'shared/components/FollowSuggest';
 import TrendsSuggest from 'shared/components/TrendsSuggest';
+import Timeline from 'shared/components/Timeline';
 
 import styles from './styles.module.scss';
 
@@ -19,7 +20,9 @@ const Profile: React.FC = () => {
           <ProfileColumn />
         </aside>
 
-        <section className={styles.main}>timeline</section>
+        <section className={styles.main}>
+          <Timeline />
+        </section>
 
         <aside className={styles.right}>
           <FollowSuggest />

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 
-import { ReactComponent as SvgFollowers } from 'assets/icons/followers.svg';
+import { ReactComponent as SvgFollowers } from "assets/icons/followers.svg";
 
 const fakeItems = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -14,7 +14,14 @@ const FollowersWidget: React.FC = () => (
     </strong>
     <ul>
       {fakeItems.map((i) => (
-        <li key={i}></li>
+        <li key={i}>
+          <img
+            src={`https://randomuser.me/api/portraits/${
+              i % 2 ? "men" : "women"
+            }/${i}.jpg`}
+            alt="follower"
+          />
+        </li>
       ))}
     </ul>
   </div>

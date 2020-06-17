@@ -1,4 +1,4 @@
-@import '../../../theme/theme';
+@import "../../../theme/theme";
 
 .container {
   img.avatar {
@@ -71,7 +71,7 @@
       li {
         flex-shrink: 0;
         flex-grow: 1;
-        background-color: $color-placeholder;
+        /* background-color: $color-placeholder; */
         margin: 5px 5px 0 0;
       }
     }
@@ -84,13 +84,19 @@
       width: 45px;
       height: 45px;
       border-radius: 50%;
+
+      img {
+        max-width: 100%;
+        border-radius: 50%;
+      }
     }
   }
 
   .photos {
     @include widget;
 
-    li {
+    li,
+    img {
       width: 80px;
       height: 80px;
       border-radius: 8px;
