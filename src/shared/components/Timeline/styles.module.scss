@@ -1,0 +1,115 @@
+@import "../../../theme/theme";
+
+.container {
+  width: 100%;
+  background-color: $color-toolbar-background;
+
+  & > header nav {
+    border-bottom: 1px solid #e6ecf0;
+    padding: 10px 15px;
+
+    a {
+      color: $color-featured;
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 20px;
+
+      &.active {
+        color: $color-text-light;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  ul {
+    li {
+      padding: 10px 15px;
+      border-bottom: 1px solid #e6ecf0;
+
+      .content {
+        display: flex;
+
+        > img {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+        }
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+
+          strong {
+            font-size: 14px;
+            color: $color-text-dark;
+
+            span,
+            time {
+              font-size: 12px;
+              font-weight: 400;
+              color: $color-button-primary;
+              position: relative;
+              padding-left: 10px;
+
+              &::before {
+                content: "";
+                width: 2px;
+                height: 2px;
+                border-radius: 50%;
+                background-color: #000;
+                opacity: 50%;
+                position: absolute;
+                left: 4px;
+                top: 6px;
+              }
+            }
+          }
+
+          p {
+            margin-top: 5px;
+            font-size: 14;
+            color: $color-text-default;
+          }
+
+          .picture {
+            margin-top: 10px;
+
+            img {
+              width: 100%;
+              box-sizing: border-box;
+              border-radius: 4px;
+              border: 1px solid #e6ecf0;
+            }
+          }
+
+          .actions {
+            display: flex;
+            margin-top: 15px;
+            margin-bottom: 5px;
+
+            a {
+              display: flex;
+              color: $color-featured;
+              align-items: center;
+              font-weight: bold;
+              font-size: 12px;
+              margin-left: 30px;
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+
+            svg {
+              margin-right: 5px;
+              stroke: $color-featured;
+            }
+          }
+        }
+      }
+    }
+  }
+}

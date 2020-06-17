@@ -1,6 +1,7 @@
-@import './reset-default', 'theme';
+@import "./reset-default", "theme";
 
 body {
   background-color: $color-background;
   font-family: $font;
+  padding-bottom: 15px;
 }
