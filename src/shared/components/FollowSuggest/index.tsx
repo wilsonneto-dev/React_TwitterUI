@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
 import ButtonFeatured, {
   ButtonTheme,
   ButtonSize,
-} from 'shared/components/ButtonFeatured';
+} from "shared/components/ButtonFeatured";
 
-import { ReactComponent as FriendsIcon } from 'assets/icons/followers.svg';
+import { ReactComponent as FriendsIcon } from "assets/icons/followers.svg";
 
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 
-import suggestions from './fakeData';
+import suggestions from "./fakeData";
 
 const FollowSuggest: React.FC = () => (
   <div className={styles.container}>
@@ -21,7 +21,7 @@ const FollowSuggest: React.FC = () => (
 
     <ul>
       {suggestions.map((user) => (
-        <li>
+        <li key={user.id}>
           <div className={styles.profile}>
             <img src={user.avatar} alt="User" />
             <div>
