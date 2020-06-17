@@ -1,4 +1,5 @@
 interface ITweet {
+  id: number;
   avatar: string;
   name: string;
   user: string;
@@ -13,6 +14,7 @@ interface ITweet {
 
 const fakeDataTweets: Array<ITweet> = [
   {
+    id: 1,
     avatar: "https://avatars3.githubusercontent.com/u/20674439?v=4",
     name: "Wilson Neto",
     user: "@wilsonneto.dev",
@@ -25,6 +27,7 @@ const fakeDataTweets: Array<ITweet> = [
     retweets: 23,
   },
   {
+    id: 2,
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     name: "Hebert Seven",
     user: "@seveen",
@@ -38,6 +41,7 @@ const fakeDataTweets: Array<ITweet> = [
     retweets: 56,
   },
   {
+    id: 3,
     avatar: "https://randomuser.me/api/portraits/women/72.jpg",
     name: "Caroline Steff",
     user: "@steffcaroll",

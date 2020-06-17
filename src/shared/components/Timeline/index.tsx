@@ -22,7 +22,7 @@ const Timeline: React.FC = () => (
 
     <ul>
       {fakeTweets.map((tweet) => (
-        <li>
+        <li key={tweet.id}>
           <div className={styles.content}>
             <img src={tweet.avatar} alt="Owner of tweet" />
             <div className={styles.text}>
